@@ -5,6 +5,18 @@ VARIABLE
 	
 	ENTIER : val
 
+FONCTION ENTIER saisirEntier()
+	VARIABLE
+		ENTIER : e	
+	DEBUT
+		Ecrire("Saisie de l'utilisateur pour un entier")
+		Lire(e)
+		
+		Retourne e
+	FIN
+
+FINFONCTION
+
 DEBUT
 	FAIRE
 		Ecrire(" Jouons a plus ou moins !! Voici différents modes :")
