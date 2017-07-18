@@ -4,6 +4,12 @@ CONSTANTE
 VARIABLE
 	
 	ENTIER : val
+	ENTIER : a
+	REEL : b
+	CARACTERE : c
+	CHAINE : d
+	BOOLEEN : bool
+
 
 FONCTION ENTIER saisirEntier()
 	VARIABLE
@@ -17,6 +23,116 @@ FONCTION ENTIER saisirEntier()
 
 FINFONCTION
 
+FONCTION ENTIER jeu_entier ( ENTIER : e)
+
+	CONSTANTE 
+	
+		
+	
+	VARIABLE 
+	
+		
+		ENTIER : random
+		
+	DEBUT
+	
+		random <- rand()*1000
+		
+		TANTQUE e != random FAIRE
+			
+			SI e > random
+			
+				Ecrire("C'est moins")
+				Lire(e)
+		
+			FINSI 
+			
+			SINON 
+		
+				Ecrire("C'est plus")
+				Lire(e)
+		
+			FINSI
+		
+		FINTANTQUE
+	
+		Retourne 0
+	
+	FIN
+
+FINFONCTION 
+
+
+FONCTION ENTIER jeu_reel ( REEL : r)
+
+	CONSTANTE 
+	
+		
+	
+	VARIABLE 
+	
+		
+		ENTIER : random
+		
+	DEBUT
+	
+		random <- rand()*1000
+		
+		TANTQUE r != random FAIRE
+			
+			SI r > random
+			
+				Ecrire("C'est moins")
+				Lire(e)
+		
+			FINSI 
+			
+			SINON 
+		
+				Ecrire("C'est plus")
+				Lire(e)
+		
+			FINSI
+		
+		FINTANTQUE
+	
+		Retourne 0
+	
+	FIN
+
+FINFONCTION 
+
+
+
+
+FONCTION ENTIER jeu_booleen ( BOOLEEN : b)
+
+	CONSTANTE 
+	
+		
+	
+	VARIABLE 
+	
+		
+		BOOLEEN : random
+		
+	DEBUT
+	
+		random <- rand()Mod(2)
+		
+		SI r != random ALORS
+			
+			Ecrire("Perdu !")
+		
+		SINON Ecrire("Bravo !")
+	
+		Retourne 0
+	
+	FIN
+
+FINFONCTION 
+
+
 DEBUT
 	FAIRE
 		Ecrire(" Jouons a plus ou moins !! Voici différents modes :")
@@ -29,12 +145,19 @@ DEBUT
 		Lire(val)
 	
 		SELON val FAIRE
-			1 : saisirEntier()
-			2 : saisirReel()
-			3 : saisirBooleen()
-			4 : saisirCaractere()
-			5 : saisirChaine()
+			1 : a <- saisirEntier()
+			    jeu(a)
+			2 : b <- saisirReel()
+			    jeu(b)
+			3 : bool <- saisirBooleen()
+			    jeu(bool)
+			4 : c <- saisirCaractere()
+			    jeu(c)
+			5 : d <- saisirChaine()
+			    jeu(d)
 			SINON Ecrire("Erreur de saisie")
 		FINSELON
 	TANTQUE val < 0 ET val > 5
+	
+	
 FIN
