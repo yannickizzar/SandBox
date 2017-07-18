@@ -1,0 +1,106 @@
+FONCTION ENTIER jeu_entier ( ENTIER : e)
+
+	CONSTANTE 
+	
+		
+	
+	VARIABLE 
+	
+		
+		ENTIER : random
+		
+	DEBUT
+	
+		random <- rand()*1000
+		
+		TANTQUE e != random FAIRE
+			
+			SI e > random
+			
+				Ecrire("C'est moins")
+				Lire(e)
+		
+			FINSI 
+			
+			SINON 
+		
+				Ecrire("C'est plus")
+				Lire(e)
+		
+			FINSI
+		
+		FINTANTQUE
+	
+		Retourne 0
+	
+	FIN
+
+FINFONCTION 
+
+
+FONCTION ENTIER jeu_reel ( REEL : r)
+
+	CONSTANTE 
+	
+		
+	
+	VARIABLE 
+	
+		
+		ENTIER : random
+		
+	DEBUT
+	
+		random <- rand()*1000
+		
+		TANTQUE r != random FAIRE
+			
+			SI r > random
+			
+				Ecrire("C'est moins")
+				Lire(e)
+		
+			FINSI 
+			
+			SINON 
+		
+				Ecrire("C'est plus")
+				Lire(e)
+		
+			FINSI
+		
+		FINTANTQUE
+	
+		Retourne 0
+	
+	FIN
+
+FINFONCTION 
+
+
+
+
+FONCTION ENTIER jeu_booleen ( BOOLEEN : b)
+
+	CONSTANTE 
+	
+		
+	
+	VARIABLE 
+	
+		
+		BOOLEEN : random
+		
+	DEBUT
+	
+		random <- rand()Mod(2)
+		
+		SI r != random ALORS
+			
+			
+	
+		Retourne 0
+	
+	FIN
+
+FINFONCTION 
