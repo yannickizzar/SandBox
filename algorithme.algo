@@ -1,4 +1,5 @@
 ALGORITHME PlusOuMoins
+
 CONSTANTE
 
 VARIABLE
@@ -11,17 +12,98 @@ VARIABLE
 	BOOLEEN : bool
 
 
-FONCTION ENTIER saisirEntier()
-	VARIABLE
-		ENTIER : e	
-	DEBUT
-		Ecrire("Saisie de l'utilisateur pour un entier")
-		Lire(e)
-		
-		Retourne e
-	FIN
 
-FINFONCTION
+	FONCTION ENTIER SaisieEntier 
+
+		CONSTANTE
+		VARIABLE
+
+		ENTIER : e
+
+		DEBUT		
+
+		Ecrire ("Saisissez un entier, ")
+		Lire (e)
+
+		retourne e
+
+		FIN
+
+
+	FINFONCTION
+
+	FONCTION REEL SaisieReel
+
+		CONSTANTE
+		VARIABLE
+
+		REEL : r
+
+		DEBUT
+
+		Ecrire ("Saisissez un reel, ")	
+		Lire (r)
+
+		Retourne r
+
+		FIN
+
+	FINFONCTION			
+
+	FONCTION BOLEEN SaisieBooleen
+
+		CONSTANTE
+		VARIABLE
+
+		BOOLEEN : b
+
+		DEBUT
+
+		Ecrire ("Saisissez un booleen (vrai ou faux), ")	
+		Lire (b)
+
+		Retourne b
+
+		FIN
+
+	FINFONCTION
+
+	FONCTION CARACTERE SaisieCaractere
+
+		CONSTANTE
+		VARIABLE
+
+		CARACTERE : c
+
+		DEBUT
+
+		Ecrire ("Saisissez un caractere, ")	
+		Lire (c)
+
+		Retourne c
+
+		FIN
+
+	FINFONCTION	
+
+	FONCTION CHAINE SaisieChaine
+
+		CONSTANTE
+		VARIABLE
+
+		CHAINE : ch
+
+		DEBUT
+
+		Ecrire ("Saisissez une chaine, ")	
+		Lire (ch)
+
+		Retourne ch
+
+		FIN
+
+	FINFONCTION					
+
 
 FONCTION ENTIER jeu_entier ( ENTIER : e)
 
@@ -161,3 +243,4 @@ DEBUT
 	
 	
 FIN
+
