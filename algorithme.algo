@@ -1,0 +1,28 @@
+ALGORITHME PlusOuMoins
+CONSTANTE
+
+VARIABLE
+	
+	ENTIER : val
+
+DEBUT
+	FAIRE
+		Ecrire(" Jouons a plus ou moins !! Voici différents modes :")
+		Ecrire(" 1) Entier ")
+		Ecrire(" 2) Reel ")
+		Ecrire(" 3) Booleen ")
+		Ecrire(" 4) Caractere ")
+		Ecrire(" 5) Chaine ")
+
+		Lire(val)
+	
+		SELON val FAIRE
+			1 : saisirEntier()
+			2 : saisirReel()
+			3 : saisirBooleen()
+			4 : saisirCaractere()
+			5 : saisirChaine()
+			SINON Ecrire("Erreur de saisie")
+		FINSELON
+	TANTQUE val < 0 ET val > 5
+FIN
